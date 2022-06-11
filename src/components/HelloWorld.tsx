@@ -1,22 +1,25 @@
-import { ref, withModifiers, defineComponent } from 'vue';
+import { ref, withModifiers, defineComponent } from 'vue'
 import './HelloWorld.css'
 
 export default defineComponent({
   props: {
-    msg: String
+    msg: {
+      type: String,
+      default: 'noProp'
+    }
   },
 
-  setup(props) {
+  setup (props) {
     const count = ref(0)
-    const { msg } = props;
+    const { msg } = props
 
     const inc = () => {
-      count.value++;
-    };
+      count.value++
+    }
 
     return () => (
       <>
-        <h1>{ msg }</h1>
+        <h1>{msg}</h1>
 
         <p>
           Recommended IDE setup:
@@ -35,7 +38,7 @@ export default defineComponent({
           <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
         </p>
 
-        <button type="button" onClick={withModifiers(inc, ["self"])}>count is:{count.value}</button>
+        <button type="button" onClick={withModifiers(inc, ['self'])}>count is:{count.value}</button>
         <p>
           Edit
           <code>components/HelloWorld.tsx</code> to test hot module replacement.

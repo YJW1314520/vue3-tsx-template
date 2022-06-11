@@ -1,14 +1,15 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import path from "path";
+import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),vueJsx()],
+  plugins: [vue(), vueJsx()],
   resolve: {
+    // 让vite来替换路径别名至真实路径
     alias: {
-      '/@': path.resolve(__dirname, './src')
+      '@': path.join(__dirname, './src')
     }
-  },
+  }
 })

@@ -3,9 +3,45 @@
 This template should help get you started developing with Vue 3 and Typescript in Vite.
 
 ## Recommended IDE Setup
-
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+## 配置eslint检查jsx,tsx文件
+```
+"eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "react",
+],
+```
+## 模板目录结构
+```
+├── dist                                // 默认的 build 输出目录
+├── public                              // vite项目下的静态目录
+└── src                                 // 源码目录
+    ├── api                             // 接口相关
+    ├── assets                          // 公共的需要经过处理的文件（如image、css、font等）
+    ├── components                      // 项目组件
+    ├── directives                      // 自定义 指令
+    ├── enums                           // 自定义 常量（枚举写法）
+    ├── layout                          // 全局布局
+    ├── router                          // 路由
+    ├── store                           // 状态管理器
+    ├── style                           // 全局样式
+    ├── utils                           // 工具库
+    ├── views                           // 页面模块目录
+        ├── login                       // login页面模块
+        ├── ...
+    ├── App.tsx                         // vue顶层文件
+    ├── main.ts                         // 项目入口文件
+    ├── types                           // 项目type类型定义文件夹
+├── .eslintrc                           // eslint配置文件
+├── .gitignore                          // git忽略
+├── index.html                          // 入口文件
+├── LICENSE.md                          // LICENSE
+├── package-lock.json                   // package-lock
+├── package.json                        // package
+├── README.md                           // README
+├── tsconfig.json                       // typescript配置文件
+└── vite.config.ts                      // vite
+```
