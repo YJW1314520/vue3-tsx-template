@@ -1,9 +1,11 @@
 # Vue 3 + Typescript + Vite
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+这是一个基于Vue3+tsx+vite的项目模板
 
-## Recommended IDE Setup
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+它内置了一些包。
+
+## 内置包
+axios+vue-router+vueuse+pinia+element-plus+vitepress+eslint
 ## 配置eslint检查jsx,tsx文件
 ```
 "eslint.validate": [
@@ -17,6 +19,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 ## 模板目录结构
 ```
 ├── dist                                // 默认的 build 输出目录
+├── docs                                // vitepress
 ├── public                              // vite项目下的静态目录
 └── src                                 // 源码目录
     ├── api                             // 接口相关
