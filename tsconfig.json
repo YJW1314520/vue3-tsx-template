@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "types": [
+      "element-plus/global"
+    ],
     "baseUrl": ".",
     // 告诉ts路径别名，这样就不会报错
     "paths": {
