@@ -1,15 +1,13 @@
-import { createApp } from 'vue'
-import App from './App'
-import router from '@/router'
-import ElementPlus from 'element-plus'
-import zhCn from 'element-plus/es/locale/lang/zh-cn'
-import { createPinia } from 'pinia'
+import './index.css'
 import 'element-plus/dist/index.css'
+import App from './App'
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import elementPlus from '@/plugins/ElementPlus'
+import router from '@/router'
 
 createApp(App)
   .use(router)
   .use(createPinia())
-  .use(ElementPlus, {
-    locale: zhCn
-  })
+  .use(elementPlus)
   .mount('#app')

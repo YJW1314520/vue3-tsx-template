@@ -4,12 +4,12 @@ const routes = [
   {
     path: '/home',
     name: 'home',
-    component: () => import('@/layout/main')
+    component: () => import('@/view/home')
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import('@/view/index')
+    component: () => import('@/view/login')
   }
 ]
 export default createRouter({

@@ -1,13 +1,15 @@
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
-export default defineComponent(
-  () => {
-    return () => (
-      <>
-        <div>
-          我是head
-        </div>
-      </>
-    )
-  }
-)
+const Header = () => {
+  const dom = ref<HTMLElement>()
+  const text = ref('ws')
+  return () => (
+    <>
+      <div ref={dom}>
+        我是head
+        {text.value}
+      </div>
+    </>
+  )
+}
+export default defineComponent(Header)
