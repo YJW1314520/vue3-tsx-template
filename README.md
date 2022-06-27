@@ -14,6 +14,27 @@
     "react",
 ],
 ```
+## 项目依赖
+```
+依赖:
+@vueuse/core 8.7.5
+axios 0.27.2
+element-plus 2.2.6
+pinia 2.0.14
+vue 3.2.37
+vue-router 4.0.16
+
+开发依赖:
+@typescript-eslint/eslint-plugin 5.29.0  eslint-plugin-n 15.2.3
+@typescript-eslint/parser 5.29.0         eslint-plugin-promise 6.0.0
+@vitejs/plugin-vue 1.10.2                eslint-plugin-vue 9.1.1
+@vitejs/plugin-vue-jsx 1.3.10            postcss 8.4.14
+@vue/compiler-sfc 3.2.37                 tailwindcss 3.1.4
+autoprefixer 10.4.7                      typescript 4.7.4
+eslint 8.18.0                            vite 2.9.13
+eslint-config-standard 17.0.0            vitepress 1.0.0-alpha.4
+eslint-plugin-import 2.26.0              vue-tsc 0.2.3
+```
 ## 模板目录结构
 ```
 ├── dist                                // 默认的build输出目录,放在server内部
