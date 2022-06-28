@@ -76,3 +76,5 @@ eslint-plugin-import 2.26.0              vue-tsc 0.2.3
 ├── tsconfig.json                       // typescript配置文件
 └── vite.config.ts                      // vite
 ```
+## 快速开始
+拷贝本仓库,进入项目目录,在命令行运行`pnpm i`安装项目依赖(如果你没有pnpm请先使用`npm i -g pnpm`全局安装pnpm)
